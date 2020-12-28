@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:black;
+}
+ul{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex; 
+}
+ul li{
+   list-style: none;
+   width:60px;
+   height:150px;
+   background:#39FF14;
+   margin: 0 4px;
+   animation: animate .7s infinite alternate;
+   margin:20px;
+}
+@keyframes animate{
+    0%{
+        transform:scaleY(1);
+    }
+    25%{
+        transform:scaleY(2);
+    }
+    50%{
+        transform:scaleY(3);
+    }
+    75%{
+        transform:scaleY(4);
+    }
+    100%{
+        transform:scaleY(5);
+    }
+}
+ul li:nth-child(1){
+    animation-delay:.1s;
+}
+ul li:nth-child(2){
+    animation-delay:.2s;
+}
+ul li:nth-child(3){
+    animation-delay:.3s;
+}
+ul li:nth-child(4){
+    animation-delay:.4s;
+}
+ul li:nth-child(5){
+    animation-delay:.5s;
+}
+ul li:nth-child(6){
+    animation-delay:.6s;
+}
+ul li:nth-child(7){
+    animation-delay:.7s;
+}
+ul li:nth-child(8){
+    animation-delay:.8s;
+}
+ul li:nth-child(9){
+    animation-delay:.9s;
+}
+ul li:nth-child(10){
+    animation-delay:1.0s;
+}
+ul li:nth-child(11){
+    animation-delay:1.1;
+}
+ul li:nth-child(12){
+    animation-delay:1.2;
+}
