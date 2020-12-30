@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding:0;
+    background:grey;
+}
+ .loader{
+    position:absolute;
+    top:calc(20% - 50px);
+    left:calc(35% - 50px);
+    width:500px;
+    height:500px;
+    border:40px groove #000; 
+    border-bottom:40px groove  #00FFFF;
+    border-radius: 50%;
+    animation: animate 4s linear infinite; 
+    background:linear-gradient(180deg,transparent,#03e9f4);
+    
+ }
+ .loader:before{
+     content:'';
+    position:absolute;
+    top:40px;
+    left:40px;
+    bottom: 40px;
+    right:40px;
+    border:40px groove #000; 
+    border-bottom:40px groove #FF0099;
+    border-radius: 50%;
+    animation: animate 3s linear infinite; 
+    background:linear-gradient(270deg,transparent,#FF0099);
+    
+ }
+ .loader:after{
+    content:'';
+   position:absolute;
+   top:122px;
+   left:122px;
+   bottom:122px;
+   right:122px;
+   border:40px groove #000; 
+   border-bottom:40px groove  #00FF00;
+   border-radius: 50%;
+   animation: animate 1s linear infinite; 
+   background:linear-gradient(360deg,transparent,#00FF00);
+  
+}
+@keyframes animate{
+   0%{
+       transform:rotate(0deg);
+   }
+   100%{
+    transform:rotate(360deg);
+}
+}
